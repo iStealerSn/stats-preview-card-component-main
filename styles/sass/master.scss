@@ -1,0 +1,32 @@
+@import "./vars";
+@import "./gfonts";
+@import "./card";
+
+:root,
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: $t-ft;
+    font-weight: $ft-bl;
+}
+
+h3, h4 {
+    font-family: $l-ft;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 0.9375rem;
+    background-color: $main-bg-cl;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}

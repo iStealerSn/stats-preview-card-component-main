@@ -1,0 +1,116 @@
+/* 
+Google Fonts [Inter] and [Lexend Deca]
+
+License
+These fonts are licensed under the Open Font License.
+
+You can use them freely in your products & projects - print or digital, commercial or otherwise. However, you can't sell the fonts on their own.
+
+This isn't legal advice, please consider consulting a lawyer and see the full license for all details.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+.card {
+  width: 100%;
+  height: auto;
+  background-color: #1b1938;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card .card__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30%;
+  position: relative;
+}
+
+.card .card__banner img {
+  width: 100%;
+  background-color: #aa5cdb;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .card__banner .card__banner__overlay {
+  position: absolute;
+  background-color: #aa5cdb;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.card .card__details {
+  padding: 2rem;
+}
+
+.card .card__details h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 35px;
+  margin-bottom: 2rem;
+}
+
+.card .card__details h2 span {
+  color: #aa5cdb;
+}
+
+.card .card__details p {
+  line-height: 20px;
+  padding: 0 5px;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: .5px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.card .card__stats h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: .5rem;
+  color: white;
+}
+
+.card .card__stats h4 {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: .7rem;
+  padding-bottom: 2rem;
+  letter-spacing: .5px;
+}
+
+:root,
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+h3, h4 {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0.9375rem;
+  background-color: #090b1a;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=master.css.map */
