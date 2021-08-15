@@ -1,0 +1,60 @@
+// Breakpoints
+$breakpoint-mobile: 23.438rem; // 375px
+$breakpoint-desktop: 90rem; // 1400px
+
+
+// Global Stylesheet
+html {
+    font-size: $font-default;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $mainbg;
+    line-height: 1.3;
+    color: white;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: $font-lg + 0.05rem;
+    font-weight: $fw-bl-inter;
+    margin-bottom: $mg-default;
+}
+
+p {
+    font-family: $fontLex;
+    color: $para;
+    margin-bottom: $mg-large;
+    line-height: 1.5;
+}
+
+ul, li {
+    padding: 0;
+    list-style: none;
+    font-size: $font-lg + 0.05rem;
+
+    > span {
+        display: block;
+    }
+}
+
+.br {
+    border-radius: 10px;
+
+   &-top {
+       border-radius: 10px 10px 0 0;
+   } 
+}
