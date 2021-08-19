@@ -4,17 +4,29 @@
     margin-top: 90px;
     margin-bottom: 50px;
 
+    @media screen and (min-width: $breakpoint-desktop) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 0;
+    }
+
     .cardimg {
         height: 15rem;
         width: 100%;
         background-color: $accent;
 
-        img {
-            width: 100%;
+        @media screen and (min-width: $breakpoint-desktop) {
+            max-height: 454px;
             height: 100%;
-            opacity: 0.8;
+            width: 50%;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            opacity: 0.4;
             object-fit: cover;
-            mix-blend-mode: multiply;
         }
     }
 
@@ -22,8 +34,19 @@
         padding: 2.5rem 1.875rem;
         text-align: center;
 
+        @media screen and (min-width: $breakpoint-desktop) {
+            padding: 4.68rem 6rem 4rem 4.375rem;
+            text-align: left;
+            width: 50%;
+        }
+
         .card-header {
                 font-family: $fontInter;
+                margin-bottom: $mg-large;
+
+                @media screen and (min-width: $breakpoint-desktop) {
+                    margin-bottom: $mg-large + 1;
+                }
             
                 h2 > span {
                     color: $accent;
@@ -32,24 +55,6 @@
 
         .stats {
             font-family: $fontInter;
-
-            li {
-                font-weight: $fw-bl-inter;
-                margin-bottom: $mg-medium;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-
-                > span {
-                    margin-top: 0.3rem;
-                    font-family: $fontLex;
-                    color: $stat-head;
-                    font-size: $font-small;
-                    text-transform: uppercase;
-                    font-weight: $fw-md-inter;
-                }
-            }
         }
     }
 }

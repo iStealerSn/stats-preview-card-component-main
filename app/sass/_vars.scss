@@ -14,6 +14,7 @@
     $font-default: 0.938rem; // 15px
     $font-md-lg: 1.5rem; // 24px
     $font-lg: 1.75rem; // 28px
+    $font-xlg: 2.5rem; // 40px
 
     // Font Weight
     $fw-md-inter: 400; // Inter font weight - Medium
@@ -26,3 +27,7 @@
     $mg-small: 1.5rem;
     $mg-medium: 2rem;
     $mg-large: 3rem;
+
+    // breakpoints
+    $breakpoint-desktop: 64.5rem; // 1024px
+    $breakpoint-mobile: 23.438rem; // 375px
